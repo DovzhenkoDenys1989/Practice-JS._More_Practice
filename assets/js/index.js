@@ -2,8 +2,6 @@
 /*1 Вычислить сумму первых N элементов последовательности . параметр N задает пользователь
 (например n=4 , 1+2+3+4)*/
 
-
-
 function sum(n){
   let accumulator = 0;
   for(let i = 1; i <= n; i++){
@@ -12,7 +10,7 @@ function sum(n){
   return accumulator;
   }
   console.log(sum(4));
-  
+
  /* function sum(n) {
     if( n < 0 ) return null;
   
@@ -29,6 +27,11 @@ function sum(n){
   console.log(sum(factNumber));*/
 
 
+/*// Реализовать с использованием классов. Для каждого поля создать get и set с проверкой типов.
+2.1 Создать объект Student который содержит следующие свойства: имя, фамилию, пол, контактные данные.
+2.2 Создать объект, который содержит свойства, о факультете и кафедре.
+2.3 Связать объекты между собой. т.е. прописать данные об факультете и кафедре для студента
+2.4 Реализовать функцию выводит на экран всю информацию о студенте*/
 
   class Student{
     constructor(name, surname, isMale, contact, universityInfo){
@@ -93,30 +96,13 @@ function sum(n){
       return this._universityInfo;
     }
 
-   /* set faculty(newFacultyStudent){
-      if(typeof newFacultyStudent !=="string"){
-        throw new TypeError("Wrong type, its not a string")
-      }
-      this.universityInfo.faculty = newFacultyStudent;
-    }*/
-
     get faculty(){
       return this.universityInfo.faculty;
     }
 
-    /*set chair(newChairStudent){
-      if(typeof newChairStudent !=="string"){
-        throw new TypeError("Wrong type, its not a string")
-      }
-      this.universityInfo.chair;
-    }*/
-
     get chair(){
       return this.universityInfo.chair;
     }
-    /*studentInfo(){
-      console.log (` Name:${this.name}\n Surname:${this.surname}\n Gender:${this.isMale ? 'Male' : 'Woman'} \n Contact:${this.contact}\n Faculty:${this.universityInfo.faculty}\n Chair:${this.universityInfo.chair}`);
-     }*/
     }
 
    class University{
