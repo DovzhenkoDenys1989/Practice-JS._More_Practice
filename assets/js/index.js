@@ -195,7 +195,7 @@ function evenIndex(array) {
 
 console.log(evenIndex(arr));
 
-//3.3 Вывести только четные элементы (четные числа делятся на 2 без остатка)
+/*3.3 Вывести только четные элементы (четные числа делятся на 2 без остатка)*/
 
 function evenItem(array) {
   let evenIt = [];
@@ -209,7 +209,7 @@ function evenItem(array) {
 
 console.log(evenItem(arr));
 
-//3.4 Вывести индексы нулевых элементов (элемент равен нулю)
+/*3.4 Вывести индексы нулевых элементов (элемент равен нулю)*/
 
 function elemNull(array) {
   let elemNl = [];
@@ -223,7 +223,7 @@ function elemNull(array) {
 
 console.log(elemNull(arr));
 
-//3.5 Подсчитать количество нулевых элементов
+/*3.5 Подсчитать количество нулевых элементов*/
 
 console.log(elemNull(arr).length);
 
