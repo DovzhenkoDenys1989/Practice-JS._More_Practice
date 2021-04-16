@@ -225,7 +225,9 @@ console.log(elemNull(arr));
 
 /*3.5 Подсчитать количество нулевых элементов*/
 
-console.log(elemNull(arr).length);
+const sumElementNull = elemNull(arr).length;
+
+console.log(sumElementNull);
 
 /*4 Создать классы:
 - Книга (автор, название, год издания, издательство)
