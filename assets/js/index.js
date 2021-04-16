@@ -162,8 +162,8 @@ function studentInfo(student) {
   );
 }
 
-console.log(studentInfo(student1));
-console.log(studentInfo(student2));
+studentInfo(student1);
+studentInfo(student2);
 
 /*3.1 Создать числовой массив и проинициализировать его из 25 элементов.
    3.1*Инициализация с помощью случайных чисел*/
